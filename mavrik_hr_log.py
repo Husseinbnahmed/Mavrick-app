@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import helper as hp
-from helper import EmployeeData
 import pickle
 
 st.markdown(""" ### How It Works 	:grey_question:""")
