@@ -8,14 +8,14 @@ st.caption("""Unleash the power of automation with our cutting-edge employee hou
 weekly hours and overtime worked, in a streamlined and dynamic manner. Say goodbye to tedious manual data entry and hello to increased efficiency and organization. :grinning:""")
 
 st.caption("""
-1. Type in the first and last name of the employee
-2. Type in the number of hours worked by the employee during the first week
-3. Type in the number of hours worked by the employee during the second week
-4. Click the "add to my database" button
-5. Watch the database automatically tally up the overtime and regular hours worked
+1. Enter the employee's first and last name.
+2. Input the hours worked by the employee during the first week.
+3. Input the hours worked by the employee during the second week.
+4. Click the "add to database" button
+5. Observe the database automatically calculate the total overtime and regular hours worked.
 
 """)
-db_name = st.text_input(":file_folder: Create a new database name (example: 1-15-2023 to 1-20-2023) ")
+db_name = st.text_input(":file_folder: Create a new database name (example: week 20 ) ")
 class EmployeeData:
     def __init__(self):
         try:
@@ -55,7 +55,7 @@ employee_data = EmployeeData()
 ###### start of application --------------------------------------------------------------------------
 with st.sidebar:
     st.sidebar.image("Maverick Concierge Blue Logo-01.jpg")
-    st.title("Mavrick's time tracking app")
+    st.title("TimeMaverick")
     
 
     employee_names = ['Diana Farghaly', 'Hussein Mohamed', 'Matt Morcos', 'Mark Morocs']
