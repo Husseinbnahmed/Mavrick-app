@@ -84,3 +84,8 @@ st.download_button(
     file_name=db_name+'.csv',
     mime='text/csv',
 )
+
+col1, col2 = st.columns(2)
+
+col1.metric(label="Total Regular hours", value=employee_data.df['Regular'].sum(), delta="hours")
+col2.metric(label="Total Overtime hours", value=employee_data.df['Overtime'].sum(), delta="hours")
