@@ -8,11 +8,12 @@ st.caption("""Unleash the power of automation with our cutting-edge employee hou
 weekly hours and overtime worked, in a streamlined and dynamic manner. Say goodbye to tedious manual data entry and hello to increased efficiency and organization. :grinning:""")
 
 st.caption("""
-1. Enter the employee's first and last name.
-2. Input the hours worked by the employee during the first week.
-3. Input the hours worked by the employee during the second week.
-4. Click the "add to database" button
-5. Observe the database automatically calculate the total overtime and regular hours worked.
+1. Start a new database by entering a database name
+2. Enter the employee's first and last name.
+3. Input the hours worked by the employee during the first week.
+4. Input the hours worked by the employee during the second week.
+5. Click the "add to database" button
+6. Observe the database automatically calculate the total overtime and regular hours worked.
 
 """)
 db_name = st.text_input(":file_folder: Create a new database name (example: week 20 ) ")
