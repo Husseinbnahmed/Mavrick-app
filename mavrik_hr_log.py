@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+from st_aggrid import AgGrid
 
 st.markdown(""" ### How It Works 	:grey_question:""")
 st.caption("""Unleash the power of automation with our cutting-edge employee hours worked tracking app.Effortlessly log and aggregate employee data, including 
