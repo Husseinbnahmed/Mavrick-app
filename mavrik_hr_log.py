@@ -53,6 +53,9 @@ def switch_name_format(name):
     last_name, first_name = name.split(', ')
     return f"{first_name} {last_name}"
 
+def create_aggrid(f):
+    Agrid_output = AgGrid(f, editable=True, theme="streamlit", height=300)
+    return Agrid_output
 
 
 
@@ -73,7 +76,8 @@ with st.sidebar:
             employeeName = name
             employee_data.add_to_df(employeeName, firstWeek, secondWeek)
     
-st.dataframe(employee_data.df, width=1000)
+# st.dataframe(employee_data.df, width=1000)
+edited_df = create_aggrid(employee_data.df)
 
 
 @st.cache
