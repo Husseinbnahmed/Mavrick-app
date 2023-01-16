@@ -48,7 +48,10 @@ class EmployeeData:
     
 employee_data = EmployeeData()
 
-
+# Function to switch name format
+def switch_name_format(name):
+    last_name, first_name = name.split(', ')
+    return f"{first_name} {last_name}"
 
 
 
@@ -59,7 +62,8 @@ with st.sidebar:
     st.title("TimeMaverick")
     
 
-    employee_names = ['Diana Farghaly', 'Hussein Mohamed', 'Matt Morcos', 'Mark Morocs']
+    list = pd.read_csv(r"Book1.csv")['Full name']
+    employee_names = list.apply(switch_name_format)
     options = st.multiselect(":female-office-worker: Employee Name ", employee_names)
     firstWeek = st.number_input(":calendar: Week one (1) hours worked", step=0.01, min_value=0.0, help="50")
     secondWeek = st.number_input(":calendar: Week two (2) hours worked", step=0.01, min_value=0.0, help="60")
