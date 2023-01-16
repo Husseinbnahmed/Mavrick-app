@@ -16,7 +16,7 @@ st.caption("""
 6. Observe the database automatically calculate the total overtime and regular hours worked.
 
 """)
-db_name = st.text_input(":file_folder: Create a new database name (example: week 20 ) ")
+db_name = st.text_input(":file_folder: Create a new file name (example: week 20 ) ")
 class EmployeeData:
     def __init__(self):
         try:
