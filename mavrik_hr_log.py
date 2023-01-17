@@ -7,11 +7,11 @@ st. set_page_config(layout="wide")
 st.title(""" How It Works 	:grey_question:""")
 st.caption("""
 To get started, simply:
-- Create a new file name (example: week 2 payroll)
-- Input the employee's first and last name in section 1
-- Enter the number of hours worked by the employee during the first week
-- Input the number of hours worked by the employee during the second week
-- Click the "add to my database" button
+- Create a new file name (for ex--> week 2 payroll)
+- Input the employee's first and last name in section 1 on the left side bar
+    - Enter the number of hours worked by the employee during the first week
+    - Input the number of hours worked by the employee during the second week
+    - Click the "submit" button
 - Experience the convenience of automatic overtime and regular hours calculation in your database.
 
 """)
