@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+st. set_page_config(layout="wide") 
 
 st.title(""" How It Works 	:grey_question:""")
 st.caption("""
